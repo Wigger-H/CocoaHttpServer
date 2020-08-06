@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML入门学习</title>
+	<!-- <link rel="stylesheet" type="text/css" href="http://www.baidu.com"> -->
+	<style type="text/css">
+		p {margin-left: 100px;margin-right: 100px;background-color: none}
+	</style>
+</head>
+<body background="/Users/apple/Desktop/1024.png">
+<h1>这是h1的标题</h1>
+<p style="background-color: blue;margin-left: 200px">这是第一段正文</p>
+<p>这是第二段正文</p>
+<a href="#1024" style="text-decoration: none;">查看新闻4</a>
+<h1>NEWS WEBSITE</h1>
+  <p>some text. some text. some text...</p>
+  ...
+
+ <div class="news">
+  <h2><a name="News1"></a> News headline 1</h2>
+  <p>some text. some text. some text...</p>
+  ...
+ </div>
+
+ <div class="news">
+  <h2>News headline 2</h2>
+  <p>some text. some text. some text...</p>
+  <p><span>some text.</span>some other text</p>
+  ...
+ </div>
+ <div class="news">
+  <h2><a id="1024"></a> News headline 3</h2>
+  <p>some text. some text. some text...</p>
+  ...
+ </div>
+
+ <div class="news">
+  <h2><a name="headline 4">已经到达这里</a> News headline 4</h2>
+  <p>some text. some text. some text...</p>
+  <p><span>some text.</span>some other text</p>
+  ...
+ </div>
+ <div class="news">
+  <h2>News headline 5</h2>
+  <p>some text. some text. some text...</p>
+  <p><span>some text.</span>some other text</p>
+  ...
+ </div>
+ <div class="news">
+  <h2>News headline 6</h2>
+  <p>some text. some text. some text...</p>
+  ...
+ </div>
+
+ <div class="news">
+  <h2>News headline 7</h2>
+  <p>some text. some text. some text...</p>
+  <p><span>some text.</span>some other text</p>
+  ...
+ </div>
+ <p>您可以点击图片进行跳转:<a href="http://www.baidu.com" ><img src="http://61.130.247.183/static/zqsw/app/10000002/zqsw.png" width="100" height="100" border="0" style="margin-left:30px;" align="middle"></a></p>
+ <img src="http://61.130.247.183/static/zqsw/app/10000002/zqsw.png" alt="天翼阅读logo">
+<p>点击图片上的区域放大图片</p>
+<img src="/Users/apple/Desktop/head.png" border="0" usemap="#person" alt="personGlasses">
+<map name="person" id="person">
+	<area shape="circle" coords="50,120,20" href="http://61.130.247.183/static/zqsw/app/10000002/zqsw.png" target="_blank" alt="天翼文化logo">
+	<area shape="circle" coords="129,161,10" href="http://61.130.247.183/static/zqsw/app/weixin/images/index.png" target="_blank" alt="微信logo">
+	<area shape="rect" coords="0,0,100,100" href="http://61.130.247.183/static/zqsw/app/weixin/images/ios_download.png" alt="下载logo">
+</map>
+<a href="http://www.baidu.com"><img src="http://61.130.247.183/static/zqsw/app/weixin/images/ios_download.png"></a>
+
+<p>下面开始学习表格</p>
+<h4>一行一列</h4>
+<table border="1">
+	<tr>
+		<td>100</td>
+	</tr>
+</table>
+<h4>一行三列</h4>
+<table border="1" cellspacing="5" cellpadding="5">
+	<tr>
+		<td>100</td>
+		<td>200</td>
+		<td>300</td>
+	</tr>
+</table>
+<h4>两行三列</h4>
+<table border="1" bgcolor="blue" width="1000">
+	<tr>
+		<th>第一列数值</th>
+		<th>第二列数值</th>
+		<th>第三列数值</th>
+	</tr>
+	<tr>
+		<td align="center">100</td>
+		<td align="right">20000</td>
+		<td>3000000</td>
+	</tr>
+	<tr>
+		<td>400</td>
+		<td>50000</td>
+		<td>6000000</td>
+	</tr>
+</table>
+<hr>
+<table border="1">
+	<caption>个人信息</caption>
+	<tr>
+		<th>姓名</th>
+		<td>刘同</td>
+	</tr>
+	<tr>
+		<th>性别</th>
+		<td>男</td>
+	</tr>
+	<tr>
+		<th>电话</th>
+		<td>12345678</td>
+	</tr>
+</table>
+<h4>横向单元格合并</h4>
+	<table border="1">
+		<tr>
+			<th>姓名</th>
+			<th colspan="2">电话</th>
+		</tr>
+		<tr>
+			<td>找钱</td>
+			<td>123456</td>
+			<td>567890</td>
+		</tr>
+	</table>
+<h4>行单元格合并</h4>
+<table border="1">
+	<tr>
+		<th>姓名</th>
+		<td>李欢</td>
+	</tr>
+	<tr>
+		<th rowspan="2">电话</th>
+		<td>2345678</td>
+	</tr>
+	<tr>
+		<td>2355454</td>
+	</tr>
+	<tr>
+		<th>住址</th>
+		<td>浙江杭州</td>
+	</tr>
+	<tr>
+		<th rowspan="3">职业工作</th>
+		<td>人民教师</td>
+	</tr>
+	<tr>
+		<td>武术教练</td>
+	</tr>
+	<tr>
+		<td>消防队员政治委员</td>
+	</tr>
+</table>
+<h4>单元格多种样式</h4>
+<table border="1">
+	<tr>
+		<td>
+			<p>这是第一个段落。</p>
+			<p>这是第二个段落</p>
+		</td>
+		<td>这个单元格包含一个表格
+			<table border="1">
+				<tr>
+					<td>A</td>
+					<td>B</td>
+				</tr>
+				<tr>
+					<td>C</td>
+					<td>D</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			这个单元格包含一个列表：
+			<ul>
+				<li>苹果</li>
+				<li>香蕉</li>
+				<li>菠萝</li>
+			</ul>
+		</td>
+		<td>HELLO</td>
+	</tr>
+</table>
+<h3>表格样式</h3>
+<table frame="vsides">
+	<tr>
+		<th>Month</th>
+		<th>Savings</th>
+	</tr>
+	<tr>
+		<td>January</td>
+		<td>$100</td>
+	</tr>
+</table>
+<h3>下面学习列表</h3>
+<ul type="square">
+	<li>咖啡</li>
+	<li>茶</li>
+	<li>n牛奶</li>
+</ul>
+<ol type="I">
+	<li>苹果</li>
+	<li>西瓜</li>
+	<li>香蕉</li>
+</ol>
+<ol start="100">
+	<li>张三</li>
+	<li>李四</li>
+	<li>王五</li>
+</ol>
+<h3>嵌套列表</h3>
+<ul>
+	<li>咖啡</li>
+	<li>茶
+		<ul>
+			<li>红茶</li>
+			<li>绿茶</li>
+		</ul>
+	</li>
+</ul>
+<h3>两层嵌套</h3>
+<ul>
+	<li>咖啡</li>
+	<li>茶
+		<ul>
+			<li>红茶</li>
+			<li>绿茶
+				<ul>
+					<li>中国茶</li>
+					<li>外国茶</li>
+				</ul>
+			</li>
+		</ul>
+	<li>牛奶</li>
+</ul>
+<h2>自定义列表</h2>
+<dl>
+	<dt>计算机</dt>
+	<dd>用来计算的仪器</dd>
+	<dt>显示器</dt>
+	<dd>以视觉方式显示信息的装置</dd>
+</dl>
+<p><span style="font-size: 20;color: orange">提示:</span>高空落物，请注意安全！</p>
+</body>
+</html>

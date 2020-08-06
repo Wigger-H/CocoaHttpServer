@@ -1,0 +1,88 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
+</head>
+<body>
+    <button onclick="getIdfa()">获取idfa</button>
+    <button onclick="calculate()">加减乘除</button>
+    <div class="form-group">
+        <label for="crowd_file" class="col-sm-2 control-label">上传文件</label>
+        <div class="col-sm-10">
+            <input type="file" accept=".png,.jpeg,.jpg,.doc,.docx,.xls,.xlsx,.pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" id="crowd_file">
+        </div>
+    </div>
+    <button onclick="submit()">提交</button>
+    <script type="text/javascript">
+        function getIdfa() {
+            $.ajax({
+                type: "get",    //请求方式
+                async: true,    //是否异步
+                url: "http://localhost:12345/getIdfa",
+                success: function (data) {
+                    alert(data);
+                },
+                error: function () {
+                   alert("error");
+                }
+            });
+        }
+        function calculate() {
+            $.ajax({
+                type: "post",    //请求方式
+                async: true,    //是否异步
+                url: "http://localhost:12345/calculate",
+                data: {"firstNum":9, "secondNum":7},
+                success: function (data) {
+                    alert(data);
+                },
+                error: function () {
+                    alert("error");
+                }
+            });
+        }
+    function submit(){
+        var $file1 = $("input[id='crowd_file']").val();//用户文件内容(文件)
+                    // 判断文件是否为空
+                    if ($file1 == "") {
+                        alert("请选择上传的目标文件! ")
+                        return false;
+                    }
+                    //判断文件类型,我这里根据业务需求判断的是Excel文件
+                   var fileName1 = $file1.substring($file1.lastIndexOf(".") + 1).toLowerCase();
+                   if(fileName1 != "xls" && fileName1 !="xlsx"){
+                      alert("请选择Execl文件!");
+                       return false;
+                  }
+                    //判断文件大小
+                    var size1 = $("input[id='crowd_file']")[0].files[0].size;
+                    if (size1>104857600) {
+                        alert("上传文件不能大于100M!");
+                        return false;
+                    }
+                    
+                    boo1 = true;
+                var type = "file";
+    
+        var formData = new FormData();
+
+        formData.append("crowd_file",$('#crowd_file')[0].files[0]);
+        $.ajax({
+            type: "post",    //请求方式
+            async: true,    //是否异步
+            url: "http://localhost:12345/uploadFile",
+            data: formData,
+            processData : false,// 使数据不做处理
+            contentType : false,// 使数据不做处理
+            success: function (data) {
+                alert(data);
+            },
+            error: function () {
+                alert("error");
+            }
+        });
+    }
+    </script>
+</body>
+</html>

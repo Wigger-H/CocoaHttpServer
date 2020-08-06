@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<!-- <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> -->
+<!-- <meta http-equiv="Refresh" content="5;url=http://www.w3school.com.cn" />
+ -->
+ 	<script type="text/javascript">
+ 		function cnvs_getCoordinates(e) {
+ 			x=e.clientX;
+ 			y=e.clientY;
+ 			document.getElementById("xycoordinates").innerHTML = "Coordinates: ("+x+","+y+")";
+ 		}
+ 		function cnvs_clearCoordinates(para) {
+ 			document.getElementById("xycoordinates").innerHTML = para;
+ 		}
+ 	</script>
+ </head>
+
+<body>
+<p>
+对不起。我们已经搬家了。您的 URL 是 <a href="http://www.w3school.com.cn">http://www.w3school.com.cn</a>
+</p>
+
+<p>您将在 5 秒内被重定向到新的地址。</p>
+
+<p>如果超过 5 秒后您仍然看到本消息，请点击上面的链接。</p>
+<p>家乐鸡粉啦&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp肯定放假啊接发的卡收费就链接 </p>
+
+<form>
+	First Name:<br/>
+	<input type="text" name="firstname" value="123" readonly="">
+	<br/>
+	Last Name:<br/>
+	<input type="text" name="lastname" value="456">
+	<br><br>
+	<input type="submit">
+</form>
+<form action="11111111.asp">
+	<input type="radio" name="sex" value="male" checked="">男</input>
+	<br>
+	<input type="radio" name="sex" value="female" >女</input>
+	<br>
+	<input type="submit">
+</form>
+<h1>表单元素学习</h1>
+<form>
+	<select name="cars">
+		<option value="volvo">Volvo</option>
+		<option value="saab">Saab</option>
+		<option value="fiat">Fiat</option>
+		<option value="audi" selected="">Audi</option>
+	</select>
+	<br><br>
+	<input type="submit">
+</form>
+<textarea name="message" rows="10" cols="10" >
+	The cat was playing in the garden.fjlajflj lfjla放假阿拉基的解放路口解放路卡机负反馈大舅发了福利卡大舅发了街坊邻居大发了积分记录的咖啡机了放假看大家说发链接爱的速递六块腹肌按道理可使肌肤了大家法拉第时间是否辣椒了咖啡记录卡打飞机辣的解放啦看电视就废了基多拉放假量较大分离开静安寺打开连接发电量可使肌肤拉丝机的发件莱卡的设计费垃圾费的四六级阿萨德了疯狂就爱打瞌睡的房间看了发叫克拉的设计费立刻就付款家里
+</textarea>
+<br>
+<button type="button" onclick="alert('Hello World!')">点击我啊！</button>
+<br>
+<form action="123.asp">
+	<input list="browsers">
+	<datalist id="browsers">
+		<option value="Internet Explorer"></option>
+		<option value="Firefox"></option>
+		<option value="Chrome"></option>
+		<option value="Opera"></option>
+		<option value="Safari"></option>
+	</datalist>
+	<input type="submit">
+</form>
+<form action="accountPassword">
+	User name:
+	<input type="text" name="userid" disabled="">
+	<br>
+	User password:
+	<input type="password" name="psw" size="100" maxlength="10">
+	<br>
+	<input type="submit">
+</form>
+<form>
+	<input type="checkbox" name="vehicle" value="Bike" checked="">I have a bike
+	<br>
+	<input type="checkbox" name="vehicle" value="Car">I have a car
+	<br>
+	<input type="submit">
+</form>
+<form action="1111.asp">
+	数量（1到5之间）： 
+	<input type="number" name="quantity"  value="30" min="0" max="100" step="10">
+	<input type="submit">
+</form>
+<form>
+	<input type="date" name="bday" max="1979-12-31">
+	<input type="submit">
+	<br>
+	<input type="date" name="bday" min="2000-01-03">
+	<input type="submit" >
+</form>
+<form>
+	<input type="color" name="favcolor" value="#ff0000">
+	<input type="submit">
+</form>
+<form>
+	<input type="range" name="points" min="0" max="10" value="9" step="2">
+	<input type="submit">
+</form>
+<form>
+	<input type="month" name="bdaymonth">
+	<input type="submit">
+</form>
+<form>
+	<input type="week" name="year_week">	
+	<input type="submit">
+</form>
+<form>
+	<input type="time" name="user_time">
+	<input type="submit">
+</form>
+<form>
+	<input type="email" name="email" autocomplete="on" autofocus="autofocus">
+	<input type="submit">
+</form>
+<form id="form1"> 
+	外部表单：
+	<br>	
+	<input type="text" name="fname">
+	<input type="submit">
+</form>
+first name:<input type="text" name="fname" form="form1">
+<br>
+<form>
+	<input type="text" name="fname">
+	<br>
+	<input type="image" src="http://61.130.247.183/static/zqsw/app/10000002/zqsw.png" alt="天翼文化logo" width="100" height="100">
+</form>
+<form>
+	请选择图片：
+	<input type="file" name="img" multiple="multiple">
+	<input type="submit">
+</form>
+<form>
+	<input type="text" name="country_code" pattern="[A-z]{3}" placeholder="三个字母的国家代码" title="三个字母的国家代码">
+	<input type="submit">
+</form>
+<h1>调用JS</h1>
+<p id="demo">This is paragraph 1.</p>
+<p id="Demo">This is paragraph 2.</p>
+<script type="text/javascript">
+	document.getElementById("Demo").innerHTML = "<p>HELLO&nbsp&nbsp&nbsp&nbsp"+"WORLD</p>";
+</script>
+<h2>学习使用Canvas画布</h2>
+<canvas id="myCanvas" width="200" height="100" style="border: 1px solid #c3c3c3"></canvas>
+<script type="text/javascript">
+	var c=document.getElementById("myCanvas");
+	var cxt=c.getContext("2d");
+	cxt.fillStyle="#FF0000";
+	cxt.fillRect(0,0,150,75);
+	cxt.moveTo(10,10);
+	cxt.lineTo(150,50);
+	cxt.lineTo(10,50);
+	cxt.stroke();
+	cxt.fillStyle="#FF0000";
+	cxt.beginPath();
+	cxt.arc(185,85,15,0,Math.PI*2,true);
+	cxt.closePath();
+	cxt.fill();
+	var img = new Image();
+	img.src="/Users/apple/Desktop/head.png";
+	cxt.drawImage(img,0,0);
+</script>
+<div id="111"></div>
+<h2>识别坐标</h2>
+<div id="coordiv" style="margin: 0px;float: left;width: 200px;height: 100px;border: 1px solid #c3c3c3" onmousemove="cnvs_getCoordinates(event)" onmouseout="cnvs_clearCoordinates(123456789)"></div>
+<br><br><br>
+<div id="xycoordinates" style="margin: 0px;">显示坐标位置</div>
+<br><br><br>
+<link rel="stylesheet" type="text/css" href="">
+</body>
+</html>
